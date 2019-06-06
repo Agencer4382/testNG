@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21332" started-at="2019-06-06T18:47:53Z" finished-at="2019-06-06T18:48:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21332" started-at="2019-06-06T18:47:53Z" finished-at="2019-06-06T18:48:14Z">
+      <class name="taskHW.Task3EmployeeDetails">
+        <test-method status="PASS" signature="login()[pri:0, instance:taskHW.Task3EmployeeDetails@6767c1fc]" name="login" is-config="true" duration-ms="10991" started-at="2019-06-06T18:47:53Z" finished-at="2019-06-06T18:48:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="addEmployee()[pri:0, instance:taskHW.Task3EmployeeDetails@6767c1fc]" name="addEmployee" duration-ms="3495" started-at="2019-06-06T18:48:04Z" finished-at="2019-06-06T18:48:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="verifyEmployee()[pri:0, instance:taskHW.Task3EmployeeDetails@6767c1fc]" name="verifyEmployee" duration-ms="2999" started-at="2019-06-06T18:48:07Z" finished-at="2019-06-06T18:48:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmployee -->
+        <test-method status="PASS" signature="quite()[pri:0, instance:taskHW.Task3EmployeeDetails@6767c1fc]" name="quite" is-config="true" duration-ms="3819" started-at="2019-06-06T18:48:10Z" finished-at="2019-06-06T18:48:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- taskHW.Task3EmployeeDetails -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
