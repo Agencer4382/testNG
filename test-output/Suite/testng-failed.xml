@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="cpass" value="user1"/>
+    <parameter name="pass" value="user1"/>
+    <parameter name="browser" value="user"/>
+    <parameter name="url" value="http://newtours.demoaut.com/"/>
+    <classes>
+      <class name="com.Class04.NewTourExample">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="userInformation"/>
+        </methods>
+      </class> <!-- com.Class04.NewTourExample -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

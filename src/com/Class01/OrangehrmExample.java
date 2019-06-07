@@ -1,4 +1,4 @@
-package class01;
+package com.Class01;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;

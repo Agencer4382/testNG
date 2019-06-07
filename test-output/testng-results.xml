@@ -1,29 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21332" started-at="2019-06-06T18:47:53Z" finished-at="2019-06-06T18:48:14Z">
+  <suite name="Suite" duration-ms="10269" started-at="2019-06-07T02:06:05Z" finished-at="2019-06-07T02:06:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21332" started-at="2019-06-06T18:47:53Z" finished-at="2019-06-06T18:48:14Z">
-      <class name="taskHW.Task3EmployeeDetails">
-        <test-method status="PASS" signature="login()[pri:0, instance:taskHW.Task3EmployeeDetails@6767c1fc]" name="login" is-config="true" duration-ms="10991" started-at="2019-06-06T18:47:53Z" finished-at="2019-06-06T18:48:04Z">
+    <test name="Test" duration-ms="10269" started-at="2019-06-07T02:06:05Z" finished-at="2019-06-07T02:06:16Z">
+      <class name="com.Class04.NewTourExample">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.Class04.NewTourExample@55f3ddb1]" name="setUp" is-config="true" duration-ms="7482" started-at="2019-06-07T02:06:05Z" finished-at="2019-06-07T02:06:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://newtours.demoaut.com/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="addEmployee()[pri:0, instance:taskHW.Task3EmployeeDetails@6767c1fc]" name="addEmployee" duration-ms="3495" started-at="2019-06-06T18:48:04Z" finished-at="2019-06-06T18:48:07Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="userInformation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.Class04.NewTourExample@55f3ddb1]" name="userInformation" duration-ms="2438" started-at="2019-06-07T02:06:13Z" finished-at="2019-06-07T02:06:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="verifyEmployee()[pri:0, instance:taskHW.Task3EmployeeDetails@6767c1fc]" name="verifyEmployee" duration-ms="2999" started-at="2019-06-06T18:48:07Z" finished-at="2019-06-06T18:48:10Z">
+        </test-method> <!-- userInformation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Class04.NewTourExample@55f3ddb1]" name="tearDown" is-config="true" duration-ms="308" started-at="2019-06-07T02:06:15Z" finished-at="2019-06-07T02:06:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEmployee -->
-        <test-method status="PASS" signature="quite()[pri:0, instance:taskHW.Task3EmployeeDetails@6767c1fc]" name="quite" is-config="true" duration-ms="3819" started-at="2019-06-06T18:48:10Z" finished-at="2019-06-06T18:48:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quite -->
-      </class> <!-- taskHW.Task3EmployeeDetails -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Class04.NewTourExample -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
