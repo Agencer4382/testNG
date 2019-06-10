@@ -2,18 +2,32 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="cpass" value="user1"/>
-    <parameter name="pass" value="user1"/>
-    <parameter name="browser" value="user"/>
-    <parameter name="url" value="http://newtours.demoaut.com/"/>
+    <parameter name="zip" value="07015"/>
+    <parameter name="date" value="10/25"/>
+    <parameter name="product" value="MyMoney"/>
+    <parameter name="quantity1" value="3"/>
+    <parameter name="city1" value="TestNG"/>
+    <parameter name="quantity" value="5"/>
+    <parameter name="cardNum1" value="1234569789789456"/>
+    <parameter name="city" value="JAVA"/>
+    <parameter name="product1" value="ScreenSaver"/>
+    <parameter name="zip1" value="07015"/>
+    <parameter name="date1" value="10/23"/>
+    <parameter name="url" value="http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx"/>
+    <parameter name="cardNum" value="1234569789789456"/>
+    <parameter name="street" value="30 Loop Ave."/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="name" value="Kevin KURT"/>
+    <parameter name="street1" value="20 For Ave."/>
+    <parameter name="name1" value="Will Smith"/>
     <classes>
-      <class name="com.Class04.NewTourExample">
+      <class name="taskHW.TaskDataProvider">
         <methods>
-          <include name="setUp"/>
+          <include name="getData"/>
           <include name="tearDown"/>
-          <include name="userInformation"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.Class04.NewTourExample -->
+      </class> <!-- taskHW.TaskDataProvider -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Class04.DataProviderTest">
+      <class name="taskHW.TaskDataProvider">
         <methods>
-          <include name="getData"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="changeAdress"/>
         </methods>
-      </class> <!-- com.Class04.DataProviderTest -->
+      </class> <!-- taskHW.TaskDataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
