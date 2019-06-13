@@ -1,4 +1,6 @@
-package taskHW;
+package com.Class05;
+
+
 
 import java.io.File;
 import java.io.IOException;
@@ -12,18 +14,19 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Method.CommonMethods;
 
 public class TaskDataProvider extends CommonMethods {
 	
-	
+	@Parameters({"browser", "url","username","password"})
 	@BeforeClass(alwaysRun=true)
-	public void setUp() {
-		setUpDriver("chrome", "http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx");
-		sendText(driver.findElement(By.xpath("//input[contains(@id,'username')]")), "Tester");
-		sendText(driver.findElement(By.xpath("//input[contains(@id,'password')]")),"test");
+	public void setUp(String browser,String url, String username,String password) {
+		setUpDriver(browser, url);
+		driver.findElement(By.xpath("//input[contains(@id,'username')]")).sendKeys(username);
+		driver.findElement(By.xpath("//input[contains(@id,'password')]")).sendKeys(password);
 		clickRadiAndChechk(driver.findElement(By.xpath("//input[contains(@id,'login_button')]")));
 		Assert.assertEquals(driver.findElement(By.xpath("//h1[text()='Web Orders']")).isDisplayed(),true);
 	}

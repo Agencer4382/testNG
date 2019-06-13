@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="zip" value="07015"/>
-    <parameter name="date" value="10/25"/>
-    <parameter name="product" value="MyMoney"/>
-    <parameter name="quantity1" value="3"/>
-    <parameter name="city1" value="TestNG"/>
-    <parameter name="quantity" value="5"/>
-    <parameter name="cardNum1" value="1234569789789456"/>
-    <parameter name="city" value="JAVA"/>
-    <parameter name="product1" value="ScreenSaver"/>
-    <parameter name="zip1" value="07015"/>
-    <parameter name="date1" value="10/23"/>
-    <parameter name="url" value="http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx"/>
-    <parameter name="cardNum" value="1234569789789456"/>
-    <parameter name="street" value="30 Loop Ave."/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="name" value="Kevin KURT"/>
-    <parameter name="street1" value="20 For Ave."/>
-    <parameter name="name1" value="Will Smith"/>
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="2" name="Test(failed)" parallel="classes">
     <classes>
-      <class name="taskHW.TaskDataProvider">
+      <class name="com.Class05.SauceDemo">
         <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testUsers" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.Class05.SauceDemo -->
+      <class name="com.Class05.TaskDataProvider">
+        <methods>
+          <include name="changeAdress"/>
           <include name="getData"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- taskHW.TaskDataProvider -->
+      </class> <!-- com.Class05.TaskDataProvider -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

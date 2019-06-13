@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="2" name="Test(failed)" parallel="classes">
     <classes>
-      <class name="taskHW.TaskDataProvider">
+      <class name="com.Class05.SauceDemo">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="changeAdress"/>
+          <include name="testUsers" invocation-numbers="1"/>
         </methods>
-      </class> <!-- taskHW.TaskDataProvider -->
+      </class> <!-- com.Class05.SauceDemo -->
+      <class name="com.Class05.TaskDataProvider">
+        <methods>
+          <include name="changeAdress"/>
+          <include name="getData"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Class05.TaskDataProvider -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

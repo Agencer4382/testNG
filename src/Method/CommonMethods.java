@@ -1,13 +1,21 @@
 package Method;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonMethods {
 	public static WebDriver driver;
@@ -23,8 +31,8 @@ public class CommonMethods {
 		}
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		//driver.manage().window().maximize();
+		//driver.manage().deleteAllCookies();
 		driver.get(url);
 		
 		
@@ -128,7 +136,43 @@ public class CommonMethods {
 			
 			e.printStackTrace();
 		}
-		
 	
+	}
+		
+	/**
+	 * Method that will wait for element to be visible
+	 * 
+	 * @param WebElement element, int time
+	 */
+	public static void waitForElementBeVisible(WebElement element, int time) {
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+
+	public static void waitForElementBeVisible(By locator, int time) {
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}
+
+	public static void waitForElementBeClickable(WebElement element, int time) {
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+
+	public static void waitForElementBeClickable(By locator, int time) {
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		wait.until(ExpectedConditions.elementToBeClickable(locator));
+	}
+	public static void takeScreenshot(String folderName, String fileName) {
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File pic=ts.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(pic, new File("screenshots/"+folderName+"/"+fileName+"png"));
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+			System.out.println("Unable to take screenshot");
+		}
+
 	}
 }

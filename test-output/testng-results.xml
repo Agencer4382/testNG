@@ -1,117 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39113" started-at="2019-06-10T04:53:11Z" finished-at="2019-06-10T04:53:50Z">
+  <suite name="Suite" duration-ms="11645" started-at="2019-06-12T20:45:39Z" finished-at="2019-06-12T20:45:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39113" started-at="2019-06-10T04:53:11Z" finished-at="2019-06-10T04:53:50Z">
-      <class name="taskHW.TaskDataProvider">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:taskHW.TaskDataProvider@c038203]" name="setUp" is-config="true" duration-ms="5599" started-at="2019-06-10T04:53:11Z" finished-at="2019-06-10T04:53:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:taskHW.TaskDataProvider@c038203]" name="getData" duration-ms="12779" started-at="2019-06-10T04:53:17Z" data-provider="setUpData" finished-at="2019-06-10T04:53:30Z">
+    <test name="ChromeTest" duration-ms="7406" started-at="2019-06-12T20:45:39Z" finished-at="2019-06-12T20:45:46Z">
+      <class name="com.Class05.DemoTest">
+        <test-method status="PASS" signature="testCrossBrowser(java.lang.String)[pri:0, instance:com.Class05.DemoTest@c038203]" name="testCrossBrowser" duration-ms="7358" started-at="2019-06-12T20:45:39Z" finished-at="2019-06-12T20:45:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MyMoney]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Kevin KURT]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[30 Loop Ave.]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[JAVA]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[07015]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[1234569789789456]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[10/25]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getData -->
-        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:taskHW.TaskDataProvider@c038203]" name="getData" duration-ms="13143" started-at="2019-06-10T04:53:30Z" data-provider="setUpData" finished-at="2019-06-10T04:53:43Z">
+        </test-method> <!-- testCrossBrowser -->
+      </class> <!-- com.Class05.DemoTest -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="11645" started-at="2019-06-12T20:45:39Z" finished-at="2019-06-12T20:45:51Z">
+      <class name="com.Class05.DemoTest">
+        <test-method status="PASS" signature="testCrossBrowser(java.lang.String)[pri:0, instance:com.Class05.DemoTest@6a4f787b]" name="testCrossBrowser" duration-ms="11599" started-at="2019-06-12T20:45:39Z" finished-at="2019-06-12T20:45:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ScreenSaver]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Will Smith]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[20 For Ave.]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[TestNG]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[07015]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[1234569789789456]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[10/23]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getData -->
-        <test-method status="PASS" signature="changeAdress()[pri:2, instance:taskHW.TaskDataProvider@c038203]" name="changeAdress" duration-ms="7549" started-at="2019-06-10T04:53:43Z" finished-at="2019-06-10T04:53:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeAdress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:taskHW.TaskDataProvider@c038203]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-06-10T04:53:50Z" finished-at="2019-06-10T04:53:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- taskHW.TaskDataProvider -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testCrossBrowser -->
+      </class> <!-- com.Class05.DemoTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
 </testng-results>
